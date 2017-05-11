@@ -1,0 +1,26 @@
+Content:
+	Bio
+		Name
+		Picture
+		Contact Info
+			Email
+			Phone?
+		Education
+		Short Description
+		Links:
+			github
+			Linkedin
+	Resume
+		just my entire resume content on the page
+		(done forget fellowship)
+	Projects
+		DSpace
+			Link to github
+		Research
+			Posters
+			papers (citations at least)
+		Compilers project
+			Link to github
+		AI project
+			Link to github
+		

@@ -1,0 +1,5 @@
+Background: #A5CCD1
+Nav bar: #BCD4DE
+Nav Bar Text: #9DACB2
+Main Text: #949BA0
+Extra: #A0B09BE

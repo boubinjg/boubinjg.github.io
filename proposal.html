@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <title>Legend of Zelda Marriage Proposal</title>
+    <link rel="icon" type="image/png" href="favicon-32x32.png" size="32x32">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+   <div class="navbar">
+     <nav class="navbar navbar-toggleable-sm navbar-inverse bg-inverse fixed-top">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Jayson Boubin</a>
+        </div>
+          <div class="collapse navbar-collapse" id="navbarsExampleDefault">       
+          <ul class="navbar-nav mr-auto">
+            <li class="dropdown">
+              <a class="nav-link" href="index.html">About</span></a>
+            </li>
+            <li class="dropdown">
+              <a class="nav-link" data-toggle="dropdown" href="#">Research<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a class = "nav-link" href="faultinjection.html">UAV Fault Injection</a></li>
+                <li><a class = "nav-link" href="trust.html">Trust in Automated Systems</a></li>
+                <li><a class = "nav-link" href="cyberworkload.html">Cyber Operator Workload Modeling</a></li>
+                <li><a class = "nav-link" href="processmigration.html">Dynamic Process Migration</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a class="nav-link" data-toggle="dropdown" href="#">Projects</a>
+              <ul class="dropdown-menu">
+                <li><a class = "nav-link" href="proposal.html">Romhack Marriage Proposal</a></li>
+                <li><a class = "nav-link" href="dspace.html">DSpace Profile Module</a></li>
+                <li><a class = "nav-link" href="compiler.html">Micro-language Compiler</a></li>
+                <li><a class = "nav-link" href="ai.html">AI Game Project</a></li>
+                <li><a class = "nav-link" href="mega.html">MEGA Tournament Scheduler</a></li>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="container">
+      <h1>Projects</h1>
+      <br>
+      <h3>Legend of Zelda Romhack Marriage Proposal</h3>
+      <h6><i>With Max Fogle and Matt Boubin </i></h6>   
+      <div class = "row">
+          <div class="col-lg-8 col-md-6 col-xs-12">
+            <p><font size="3">In the spring of 2017, I decided that it was time to propose to my girlfriend. She loves video games, but above all her favorites are among the iconic Legend of Zelda franchise. She owns a copy of every Legend of Zelda game released by Nintendo, and even has a self-designed Legend of Zelda tattoo. I thought it appropriate to incorporate this passion of hers into my proposal. I decided to use my computer skills to reprogram one of the Legend of Zelda games to ask her to marry me.</p>            
+          <p><font size="3">Before I chose a game to modify, I first wanted to see what had been done before, and what was possible for me to do with a few months of very limited free time. Through my research, I found that there was an active community of people who create and reproduce NES games. Members of this community regularly create and distribute new NES ROMs and cartridges, as well as reproduce old games, possibly with new translations or mods. There were even translations, mods, and cartridge reproductions of the original Legend of Zelda. I figured this was the perfect game to use. The game’s simplicity, notoriety, and modding community made it the best choice among the Legend of Zelda series for me to reproduce. </p>
+          </div>
+             <div class="col-lg-4 col-md-6 col-xs-12">
+               <img class = "img-responsive" src="ProposalImages/Finished Board" alt="Finished Board" width=280>
+             </div>
+          </div> 
+      
+      <div class = "row">
+        <div class = "col-lg-12 col-md-12 col-xs-12">
+	   <p>It appeared that creating this game was going to be a simple two step process. I would have to reprogram them game, then write the game to a chip and solder the chip onto the cartridge’s circuit board. <font size="3"></p>
+	  <p>First, I was going to have to reprogram the game by modifying an original ROM. There are a few ways to modify a NES ROM. You can use a disassembler and edit the 6502 assembly code directly, or you can use a hex editor and edit the ones and zeros directly. Also, some people spend their free time making modding tools for these games, and if you search hard enough you may find one. The wonderful people at Zophar’s Domain have aggregated a bunch of these tools for editing ROMs, many of which are game specific. My original plan was to use a disassembler and actually write code to modify the game. Unfortunately, I couldn’t find one that worked on Linux, or even modern Windows, and I didn’t want to install a legacy version of windows either, so I decided to use a hex editor and some other available tools.  <font size="3"></p>
+        </div>
+      </div>
+      <div class = "row">
+        <div class="col-lg-12 col-md-12 col-xs-12">
+          <img class = "img-responsive" src="ProposalImages/hexEditor.gif" alt="Language Example" style = "width:100%">
+        </div>
+      </div>
+      <div class = "row">
+	<div class = "col-lg-12 col-md-12 col-xs-12">
+	  <p><font size="3">I ended up using a combination of three tools: DungeonMaster,  ZeldaTech, and the FCEUX hex editor. DungeonMaster and Zelda Tech are two tools created by the same author around 8 to 10 years ago that edit the dungeons and overworld of the original legend of zelda respectively. These tools are quite powerful, and can be used to change enemy placement, item placement, level mapping, shop locations, and more. I used these tools to implement my the basic design. I used the FCEUX hex editor to implement detailed changes. The FCEUX hex editor allows you to see the ROM and RAM of the game simultaneously while it is playing in the FCEUX emulator. Using the hex editor, you can change just about any aspect of the game within the confines of its memory. I used the hex editor to patch up some of the buggy stuff caused by my ZeldaTech and DungeonMaster modifications such as loading incorrect sprites for some monsters, monster bounding issues on some modified stages, and other small issues. I also found it easier to edit text in the hex editor. </font></p>
+        </div>
+      </div>
+      <div class = "row">
+        <div class="col-lg-12 col-md-12 col-xs-12">
+          <img class = "img-responsive" src="ProposalImages/map.png" alt="Dungeon Map" style = "width:100%">  
+        </div>
+    </div>
+    <div class = "row">
+	<div class = "col-lg-12 col-md-12 col-xs-12">
+	  <p><font size="3">Using these tools, I modified the game to suit my proposal. I wanted to create a more compact, difficult game. The game has little text to work with, so I decided to make the proposal more of a surprise at the end of the game. I reduced the size of the map, provided one difficult dungeon, and increased the number/difficulty of enemies and the frequency of heart containers and upgrades. At the end of the dungeon, I wanted to use the game’s text to propose to her. 
+<br><br>
+The new dungeon is modeled after the first dungeon of the original game, but with more difficult enemies. The dungeon is full of darknuts, gibdos, and other higher tier monsters that you must kill to get essential keys and items. I tried to make the dungeon difficult enough that you really couldn’t defeat it without taking full advantage of the free heart containers, rings, and sword upgrades from the overworld.</font></p>
+        </div>
+      </div>
+      <div class = "row">
+	<div class = "col-lg-6 col-md-6 col-xs-12">
+	  <p><font size = "3">
+Obviously, in the final chamber I wanted to ask her to marry me. The only ways I could think to do that were to execute the credit sequence and modify the credit text, or place an old man in the room and have him say what I’m thinking. The problem with both of these options is that I was limited to how much I could write by how much memory is allocated to both the old man and the title sequence to display their text. For any of you that have beaten the game, you will know that the title sequence is shockingly short. If you look at the hex, it may also notice that the sequence is formatted strangely, making any of my statements garbled unless they were formatted perfectly by character count. Old Men on the other hand are not given memory per se, they are allowed to say a number of statements, which are held in ROM and are a fixed length of characters, and the lengths vary between statements. The longest statement which can be referenced from a dungeon had just enough characters for me to say ITS DANGEROUS TO GO ALONE. WILL YOU MARRY ME? I figured that would get the point across nicely, despite the missing apostrophe which was removed for space reasons. It may also have helped that I filled every possible map square of the dungeon with unnecessary blue rings to drive the point home.
+          </font></p>
+	</div>
+        <div class = "col-lg-6 col-md-6 col-xs-12">
+	  <img class = "img-responsive" src="ProposalImages/dungeonFinal.png" alt = "final chamber" style = "width:100%">
+	</div>
+      </div>
+      <div class = "row">
+	<div class = "col-lg-6 col-md-6 col-xs-12">
+	  <p><font size = "3">
+	    After thorough testing of the ROM, I set out to find a way to put this game on a cartridge. I wanted to make this game as authentic as possible, and give here a memento of the experience, so I decided to desolder an original legend of zelda cartridge’s rom chip and resolder my own chip onto the board. 
+<br><br>
+I programmed a 32 pin 1MB EPROM with the new ROM I created, and soldered it onto the board with the help of Matt Boubin and the fine gentlemen in the Miami University Power Electronics lab. I had my friend Max Fogle create me a label for the cartridge.  
+<br><br>
+For more information, check out the link here for an album with more detailed documentation <a href="http://imgur.com/a/WvS0h">here</a>. Also, if you are wondering, she did say yes!
+	  </font></p>
+	</div>
+	<div class = "col-lg-6 col-md-6 col-xs-12">
+	  <img class = "img-responsive" src="ProposalImages/final.jpg" alt = "cartridge" style = "width:100%">
+	</div>
+      </div>  
+       
+    </div>
+    </div><!-- /.container -->
+    <footer class="footer">
+      <div class="footercontainer">
+	<!--Source: https://socialmediawidgets.wordpress.com/all-the-icons/ -->
+	<div class="footerimg">
+	  <a href = "https://www.linkedin.com/in/jayson-boubin-94a51a89">
+	    <img src="linkedin.png" alt = "linkedin" height = "40" width = "40">
+	  </a>
+	</div>
+	<div class="footerimg">
+	  <a href = "http://www.facebook.com/people/Jayson-Boubin/100003338949993">
+	    <img src="facebook.png" alt = "facebook" height = "40" width = "40">
+	  </a>
+	</div>
+	<div class="footerimg">
+        <!--Source: https://www.iconfinder.com/icons/1531637/github_logo_media_social_icon -->
+	  <a href="http://github.com/boubinjg">
+            <img src="githublogo.png" alt = "github" height = "40" width = "40">
+	  </a>
+	</div>
+	<div class="footerimg">
+        <!--Source: https://www.iconfinder.com/icons/1531637/github_logo_media_social_icon -->
+	  <a href="https://stackoverflow.com/users/7999255/jayson-boubin">
+            <img src="stackOverflow.png" alt = "stack overflow" height = "40" width = "40">
+	  </a>
+	</div>
+
+	<p style="float:right;margin-right:20px;">&copy Jayson Boubin 2017</p>
+     </div>
+    </footer>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
+
+

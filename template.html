@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <title>Title</title>
+    <link rel="icon" type="image/png" href="favicon-32x32.png" size="32x32">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  </head>
+
+  <body>
+      <div id="nav">
+		
+      </div>
+      <script>
+      $.get("navbar.html", function(data){
+        $("#nav").replaceWith(data);
+      });
+      </script>
+      <!--nav --!> 
+      <div class="container">
+      <h1>Main Heading</h1>
+      <h3>Project Title</h3>
+      <h6><i>With: </i></h6>    
+    </div>
+     
+    </div><!-- /.container -->
+    <footer class="footer">
+      <div class="footercontainer">
+	<!--Source: https://socialmediawidgets.wordpress.com/all-the-icons/ -->
+	<div class="footerimg">
+	  <a href = "https://www.linkedin.com/in/jayson-boubin-94a51a89">
+	    <img src="linkedin.png" alt = "linkedin" height = "40" width = "40">
+	  </a>
+	</div>
+	<div class="footerimg">
+	  <a href = "http://www.facebook.com/people/Jayson-Boubin/100003338949993">
+	    <img src="facebook.png" alt = "facebook" height = "40" width = "40">
+	  </a>
+	</div>
+	<div class="footerimg">
+        <!--Source: https://www.iconfinder.com/icons/1531637/github_logo_media_social_icon -->
+	  <a href="http://github.com/boubinjg">
+            <img src="githublogo.png" alt = "github" height = "40" width = "40">
+	  </a>
+	</div>
+	<div class="footerimg">
+        <!--Source: https://www.iconfinder.com/icons/1531637/github_logo_media_social_icon -->
+	  <a href="https://stackoverflow.com/users/7999255/jayson-boubin">
+            <img src="stackOverflow.png" alt = "stack overflow" height = "40" width = "40">
+	  </a>
+	</div>
+
+	<p style="float:right;margin-right:20px;">&copy Jayson Boubin 2017</p>
+     </div>
+    </footer>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
+
+

@@ -1,0 +1,16 @@
+<html>
+ <head>
+   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+ </head>
+ <body>
+  <div id="nav-placeholder">
+
+  </div>
+
+  <script>
+  $.get("navigation.html", function(data){
+    $("#nav-placeholder").replaceWith(data);
+  });
+  </script>
+ </body>
+</html>

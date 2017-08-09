@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <title>Trust in Automated Systems</title>
+    <link rel="icon" type="image/png" href="favicon-32x32.png" size="32x32">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  </head>
+
+  <body>
+    <div id="nav">
+    </div>
+      <script>
+      $.get("navbar.html", function(data){
+        $("#nav").replaceWith(data);
+      });
+      </script>
+
+    <div class="container">
+      <h1>Research</h1>
+        <br>
+        <div class="content">
+          <h3>Trust Calibration in Human-Automation Teams</h3>
+          <h6><i>With Maj. Jason Bindewald, Lorraine Borghetti, Lt. Anthony Hillesheim, Dr. Michael Miller, and Maj. Christina Rusnock</i></h6>
+          <div class="row">
+            <div class="col-lg-8 col-md-6 col-xs-12">
+                <p><font size="3">At AFIT, I conducted experimental research on trust calibration in human-automation teams. Trust is the cornerstone of all human relationships. Relationships with advanced automated agents are similar. To ensure optimal performance, human users must appropriately trust automation. An operator who is too trusting of automation may allow automation errors to go uncorrected, while an operator who trusts the agent too little will not receive maximum benefit from the aid of an automated agent. We sought to understand the mechanisms necessary to classify humans as calibrated or uncalibrated.</font></p>
+              </div>
+              <div class="col-lg-4 col-md-6 col-xs-12">
+                  <div class="image">
+                    <img src="researchImages/SpaceNav.png" alt="space navigator" height="211", width="342">
+                  </div>
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <p><font size="3">Calibration is the relationship between the human perception of an automated agent's ability and its actual ability. Calibrated users will be able to, through experience or instinct, identify and work with automated agents in a capacity relative to their ability. Our goal of this project is to create a model to classify calibrated users and uncalibrated users with a particular system. By classifying calibrated and undercalibrated users in larger systems, it may be possible to augment automation strategies to fit users calibration profiles. To perform calibration experiments, we used an environment called Space Navigator</font></p>
+                
+                <p><font size="3">Space Navigator is an air-traffic control style game specifically designed to evaluate the effectiveness of human-automation teams. It includes multiple types of automated agents, the ability to capture and time events, and the ability to impose easily distinguishable taskload levels, allowing researchers to easily study human-automation team dynamics and evaluate theoretical models in an experimental environment. Space Navigator has been developed at AFIT for years by a number of researchers. It was developed in Unity using C#. While at AFIT, I modified Space Navigator for use in a participant study in combination with The Ohio State University, used for multiple independent research projects, including our calibration study. My modifications to the game included data management and reporting fixes, interface changes, and the addition of psychological measures, such as an Implicit Association Test and subjective trust questionnaires. The data gathered from this study was used in the masters thesis of Lt. Anthony Hillesheim at AFIT and the PhD Dissertation of Lorraine Borghetti at OSU as well as other scholarly work</font></p>
+                
+                <p><font size="3">Using data from the participant study, we created a model for classifying participants by calibration which incorporates compliance and performance data from a few hours of gameplay. We used the results of our model and more data points to train a random-forest machine learning algorithm to classify participants as calibrated, undercalibrated, or overcalibrated using only 4 minutes worth of gameplay. Preliminary results show that the random forest algorithm has a 98% success rate in classifying participants with 4 minutes of data as compared to the classification model using multiple hours of gameplay data.</font></p>
+           </div>
+         </div>
+       </div>
+    <h3>Quantifying and Influencing Trust in Human-Automation Teams</h3>
+          <h6><i>With Maj. Jason Bindewald, Dr. Brett Borghetti, Lt. Tyler Goodman, Dr. Michael Miller, Maj. Christina Rusnock, and Bryan Zake</i></h6>
+            <div class="row">
+              <div class="col-lg-8 col-md-6">
+                <p>At AFIT in 2015, I began researching human-automation teaming. Human-automation teaming is becoming a common strategy for handling complex tasks. Automation is used heavily in transportation, manufacturing, energy production, and military applications. While the use of these automated systems generally results in greater performance than humans performing alone, humans are reluctant to adopt these superior systems due to lack of trust. Anecdotally, I myself find it difficult to trust systems which I do not fully understand, even if I witness their superior performance. At AFIT, we investigated the components of trust when dealing with automated systems in order isolate the components of trust, study the effects of trust, and to influence the rate of adoption of new technologies.</p>
+
+            </div>
+              <div class="col-lg-4 col-md-6 col-xs-12">
+                <div class="image">
+                  <img src="researchImages/CausalLoop.png" alt="causalLoop" height="300", width="340">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <p>We studied the compliance and reliance, two behavioral measures of human trust, using data obtained by a participant study run by Maj. Jason Bindewald, PhD, using Space Navigator. Using this data, we developed a framework for quantifying compliance and reliance over user taskload. Using this model, we created a validated discrete event simulation in <a href=https://en.wikipedia.org/wiki/IMPRINT_(Improved_Performance_Research_Integration_Tool)>IMPRINT</a>, demonstrating that our model correctly replicates the effects of human trust of automated systems.</p>
+
+                <p>We continued to analyze the data, looking for a general model for reliance and compliance in relation to automated systems. The system level model we created relates trust behaviors to objective variables, like automation reliability, performance, and user taskload, and also to subjective variables, such as user trust, acceptance, stress, and automation predictability</p>
+             </div>
+	   </div>
+           <h4>Posters and Presentations</h4>
+                
+                <div class="row">
+                  <div class="col-lg-4 col-md-6">
+                    <div class="thumbnail">
+                      <img src="posters/elicitingalgorithm.png" alt="eliciting algorithm" width="300" height="200">
+                        <div class="caption">
+                          <h3>Eliciting an Algorithm to Replicate Human Trust in Automation</h3>
+                          <p>Poster Presented at the Dayton Engineering and Science Symposium, 2015</p>
+                            <p><a href="posters/elicitingalgorithm.png" class="btn btn-outline-primary" role="button" download>Download</a></p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                      <div class="thumbnail">
+                        <img src="posters/iiePres.png" alt="IIE prsentation 2016" width="300" height="200">
+                          <div class="caption">
+                          <h3>Quantifying and Evaluating Trust in Automated Systems</h3>
+                          <p>Talk Presented by Maj. Christina Rusnock,PhD, Institute of Industrial Engineers Anual Conference, 2016</p>
+                            <p><a href="posters/IIE Presentation - Trust - Boubin-Rusnock 2016.05.22.odp" class="btn btn-outline-primary" role="button" download>Download</a></p>
+                        </div>
+                      </div>
+                    </div>
+                <div class="col-lg-4 col-md-12">
+                <h5>Citations</h5>
+                <ul><font size="2">
+                  <li>Jayson G. Boubin, Christina F. Rusnock, Jason M. Bindewald: Quantifying Compliance and Reliance Trust Behaviors to Influence Trust in Human-Automation Teams. HFES 2017</li>
+                  <li>Jayson G. Boubin, Christina F. Rusock: Measuring Human Compliance and Reliance in Automated Systems. IIE 2016. (Abstract)</li>
+                  <li>Boubin, J,G Rusnock, C,F(2015,July) Eliciting an Algorithm to Replicate Human Trust In Automation In The Domain of Compliance, Poster presented at the AFIT Summer Intern Poster Session, Air Force Institute of
+Technology, Wright Patterson Air Force Base, Ohio.</li>
+                  <li>Boubin, J,G Rusnock, C,F, Miller, M(2015 November) Simulating Compliance and Reliance, Talk presented at the Cincinnati-Dayton INFORMS Technical Symposium, Wright State University, Ohio</li>
+                  <li>Boubin, J,G Rusnock, C,F, Miller, M(2015 November) Eliciting an Algorithm to Replicate Human Trust In Automation In The Domain of Reliance, Poster presented at the Dayton Engineering Sciences Symposium,
+Wright State University, Ohio</li>
+                  <li>Boubin, J,G Rusnock, C,F(2016 May) Quantifying and Evaluating Trust in Automated Systems, Talk presented at the ISERC 2016 conference, Anaheim, California. (Presented by Maj. Christina Rusnock, Ph.D.) </li>
+                  </font>
+                </ul>
+              </div>
+            </div>
+          
+    </div>
+     
+    </div><!-- /.container -->
+    <footer class="footer">
+      <div class="footercontainer">
+	<!--Source: https://socialmediawidgets.wordpress.com/all-the-icons/ -->
+	<div class="footerimg">
+	  <a href = "https://www.linkedin.com/in/jayson-boubin-94a51a89">
+	    <img src="linkedin.png" alt = "linkedin" height = "40" width = "40">
+	  </a>
+	</div>
+	<div class="footerimg">
+	  <a href = "http://www.facebook.com/people/Jayson-Boubin/100003338949993">
+	    <img src="facebook.png" alt = "facebook" height = "40" width = "40">
+	  </a>
+	</div>
+	<div class="footerimg">
+        <!--Source: https://www.iconfinder.com/icons/1531637/github_logo_media_social_icon -->
+	  <a href="http://github.com/boubinjg">
+            <img src="githublogo.png" alt = "github" height = "40" width = "40">
+	  </a>
+	</div>
+	<div class="footerimg">
+        <!--Source: https://www.iconfinder.com/icons/1531637/github_logo_media_social_icon -->
+	  <a href="https://stackoverflow.com/users/7999255/jayson-boubin">
+            <img src="stackOverflow.png" alt = "stack overflow" height = "40" width = "40">
+	  </a>
+	</div>
+
+	<p style="float:right;margin-right:20px;">&copy Jayson Boubin 2017</p>
+     </div>
+    </footer>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
+
+

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <title>Dynamic Process Migration</title>
+    <link rel="icon" type="image/png" href="favicon-32x32.png" size="32x32">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  </head>
+
+  <body>
+    <div id="nav">
+    </div>
+      <script>
+      $.get("navbar.html", function(data){
+        $("#nav").replaceWith(data);
+      });
+      </script>
+
+    <div class="container">
+      <h1>Research</h1>
+      <br>
+      <h3>Dynamic Process Migration in Agent Based Simulation</h3>
+          <h6><i>With Dr. Dhananjai Rao, and Paul Bondurant</i></h6>
+            <div class="row">
+                  <div class ="col-lg-8 col-md-6 col-xs-12">
+                  <p><font size="3">As a freshman at Miami in 2013, I worked with Dr. Dhananjai Rao and Paul Bondurant on dynamic process migration in agent based simulation. Agent based simulations track interactions between independent agents interacting in an environment. As with all simulations, all interactions are dependent on the clock. For the simulation to yield proper results, all interacting agents must be on the same clock time. This is not usually an issue in serial agent based simulations. In parallel agent based simulations, agents in one process may be at a different clock time than agents in another process. Even if the two processes started at the same time, minute hardware differences, discrepancies in required processing, and the random nature of simulations can all cause clocks between processes to be out of sync.</p>
+                  <p>The time-warp algorithm fixes this issue. If two agents on different clock times interact, time is turned back for the agent furthest in the future. The issue with this algorithm is that it is very time consuming to run. When an agent rewinds, all of its interactions must be redone, which can take considerable processing time. The goal of this research, Paul Bondurant's Masters thesis, was to limit the the number of interactions by keeping groups of agents who interacted often on the same clock time. Using a multi-node compute cluster, Paul devised an algorithm to move commonly communicating processes to similar nodes, to cut down on time warps.</font></p>
+
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-xs-12">
+                    <div class="thumbnailBS pull-right">
+                      <img src="posters/DynamicProcessMigration.png" alt="eliciting algorithm" width="360" height="200">
+                        <div class="caption">
+                          <h3>Dynamic Process Migration in Agent-Based Simulation</h3>
+                          <p>Poster presented at the Miami University Undergraduate Research Forum, 2014</p>
+                            <p><a href="posters/DynamicProcessMigration.pdf" class="btn btn-outline-primary" role="button" download>Download</a></p>
+                        </div>
+                      </div>
+                </div>
+                </div>
+                <p><font size="3">This was my first experience with novel research. To help Paul, I performed documentation and ran tests on Miami's Redhawk compute cluster. I learned far more than I bargained for about high performance computing, parallelism, simulation, and research in general. After helping on this project, I was hooked. I continued with research throughout undergrad with the Air Force, and now I am pursuing a PhD.
+                </font></p>
+
+            <h5>Citations</h5>
+                <ul><font size="2">
+                  <li>Boubin, J.G, Bondurant, P.M, Rao D.M (2014, April) Dynamic Process Migration in Agent Based Simulation. Poster presented at the Undergraduate Research Forum, Miami University, Oxford, Ohio.
+                  </li></font>
+                </ul>
+
+
+          </div>  
+    </div>
+     
+    </div><!-- /.container -->
+    <footer class="footer">
+      <div class="footercontainer">
+	<!--Source: https://socialmediawidgets.wordpress.com/all-the-icons/ -->
+	<div class="footerimg">
+	  <a href = "https://www.linkedin.com/in/jayson-boubin-94a51a89">
+	    <img src="linkedin.png" alt = "linkedin" height = "40" width = "40">
+	  </a>
+	</div>
+	<div class="footerimg">
+	  <a href = "http://www.facebook.com/people/Jayson-Boubin/100003338949993">
+	    <img src="facebook.png" alt = "facebook" height = "40" width = "40">
+	  </a>
+	</div>
+	<div class="footerimg">
+        <!--Source: https://www.iconfinder.com/icons/1531637/github_logo_media_social_icon -->
+	  <a href="http://github.com/boubinjg">
+            <img src="githublogo.png" alt = "github" height = "40" width = "40">
+	  </a>
+	</div>
+	<div class="footerimg">
+        <!--Source: https://www.iconfinder.com/icons/1531637/github_logo_media_social_icon -->
+	  <a href="https://stackoverflow.com/users/7999255/jayson-boubin">
+            <img src="stackOverflow.png" alt = "stack overflow" height = "40" width = "40">
+	  </a>
+	</div>
+
+	<p style="float:right;margin-right:20px;">&copy Jayson Boubin 2017</p>
+     </div>
+    </footer>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
+
+

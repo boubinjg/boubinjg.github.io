@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     
-    <title>Title</title>
+    <title>Micro-language Compiler</title>
     <link rel="icon" type="image/png" href="favicon-32x32.png" size="32x32">
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -15,18 +15,31 @@
   </head>
 
   <body>
-      <div id="nav">
-      </div>
+    <div id="nav">
+    </div>
       <script>
       $.get("navbar.html", function(data){
         $("#nav").replaceWith(data);
       });
       </script>
-      <!--nav --!> 
-      <div class="container">
-      <h1>Main Heading</h1>
-      <h3>Project Title</h3>
-      <h6><i>With: </i></h6>    
+
+    <div class="container">
+      <h1>Projects</h1>
+      <br>
+       <h3>Micro-language Compiler</h3>
+        <h6><i>With John Crabill and Michelle Kojs</i></h6>
+        <div class = "row">
+          <div class="col-lg-8 col-md-6 col-xs-12">
+            <p><font size="3">For the course <i> CSE 474 Compiler Design</i> at Miami University, we had a semester long group project in which we created our own compiler. We wrote a lexer, parser, and compiler to translate a user-defined microlanguage into a runnable assembly file. The compiler is written in Python and compiles into MIPS. The language includes primitives like integers, bools, and strings. The compiler has operators for concatenation, boolean operations, basic math, and printing. The compiler has control flow in the form of while loops and if statements which are nestable. The compiler also includes more advanced features such as functions, pointers, global variables with static scoping, and recursion support.</p>
+             <p>The language takes some syntactic influences from Pascal and C. In the example program you can see the "begin" and "end" tokens as one would see in Pascal, as well as the pascal assignment operator ":=". Like C, the language requires a main function which can be void. Variables specified by the dereference "~" operator are pointers. You can also take the address "&" of a variable. This simple program demonstrates some of the functionalities of the language like pointer operations, I/O, control flow, and arithmetic. Many of the featuers are implemented in a way that may look verbose. Function calls such as "func foo2(&c) funed" on line 24 seem to have more tokens than necessary. These extra tokens are added to keep the language LL1.</p>
+             <p>This was by far the most difficult project I ever worked on for an undergraduate course. The project took place over the entire semester, slowly building on the foundations we had laid in our previous submissions. On my github, the project is divided into sections. Each section has a new compiler with more features than the last. Part 8 incorporates all of the features described above. You can check this project out on github <a href="https://github.com/boubinjg/CSE474CompilersProject">here</a>.<font></p>
+
+             </div>
+             <div class="col-lg-4 col-md-6 col-xs-12">
+               <img src="ProjectsImages/MLExample.png" alt="Language Example" height="543", width="329">
+             </div>
+          </div>
+    
     </div>
      
     </div><!-- /.container -->

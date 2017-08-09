@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <title>UAV Fault Injection</title>
+    <link rel="icon" type="image/png" href="favicon-32x32.png" size="32x32">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  </head>
+
+  <body>
+    <div id="nav">
+    </div>
+      <script>
+      $.get("navbar.html", function(data){
+        $("#nav").replaceWith(data);
+      });
+      </script>
+
+    <div class="container">
+      <h1>Research</h1>
+      <h3>UAV Fault Injection</h3>
+      <h6><i>With Dr. John Colombi, Lt Col Amy Cox, and Dr. Michael Miller</i></h6>     
+      <div class="row">
+        <div class ="col-lg-12 col-md-12 col-xs-12">
+          <p><font size="3">At AFIT, in the summer of 2017, I created a fault injection application which triggers failsafes in ardupilot UAVs. At AFIT, many people work with unmanned aerial vehicles, often using open source software from the productive RC hobbyist community. Small and midsized unmanned aerial systems running open source sofware are great for prototyping features for future commercial and military systems.<br><br>For research purposes, you often have to fly UAVs in unfavorable conditions, at high altitudes, and without necessary resources. When UAVs encounter GPS failure, communication loss, or battery drain, they have programmed fail safes that activate. Sometimes, fail safes don't do exactly what operators expect. It is important to test these fail safes before flying the expensive equipment, especially around humans. Before this application was created, testing fail safes was difficult. You would either have to set up a simulated environment and input esoteric commands from multiple sources to test different failures, or you would have to fly the vehicle in a controlled environment and activate the failures yourself by creating real failures. </font></p>       	    
+        </div>
+        <div class="col-lg-12 col-md-12 col-xs-12">
+	  <img class = "img-responsive" src="researchImages/FaultInjector.png" alt="Fault Injector GUI" width = 100%>
+        </div>
+      </div>
+      <div class = "row"> 
+        <div class ="col-lg-12 col-md-12 col-xs-12">
+	  <p><font size="3">
+	    Fault Injector is an application written in python which simplifies the simulated testing of UAV failure modes by providing a simple graphical user interface. Before Fault Injector, to test a UAV in a simulated environment, one would have to create a SITL simulation of the vehicle, connect to the simulation using MAVproxy, and then enter a series of unintuitive commands which translates to whichever system failure they would like to test. With Fault Injector, you can simply create the sitl simulation, connect to it, and start injecting failures at the push of a button. Fault Injector doesn't just work with SITL alone. You can use Fault Injector to connect to MAVproxy as well, if you desire to connect multiple ground stations, or if that is your prefered means of communication with your vehicle.  
+	  </font></p>
+          <p><font size = "3">
+            To develope this applicaton, I had to integrate more open source libraries and software packages than ever before for any of my projects or research. I worked with dronekit, mavlink, SITL, MAVproxy, JSBSim, flightgear, ArduPilot, Mission Planner, and others to develope and test this software. Our intention was for this application to be easily integrated into the current open source software ecosystem used by RC hobbyists and researchers alike, and I believe we succeeded. 
+          </p>
+          <img class = "img-responsive" src="researchImages/missionPlannerFailure.png" alt = "Mission Planner and Fault Injector" width = 100%>
+	  <p><font size = "3">
+            This application is currently being used at AFIT by the Automation and Navigation Technologies (ANT) center. If you would like to check out this application, you can download it <a href="https://github.com/boubinjg/FaultInjector">here</a>. 
+          </p>
+        </div>
+      </div>
+    </div><!-- /.container -->
+    <footer class="footer">
+      <div class="footercontainer">
+	<!--Source: https://socialmediawidgets.wordpress.com/all-the-icons/ -->
+	<div class="footerimg">
+	  <a href = "https://www.linkedin.com/in/jayson-boubin-94a51a89">
+	    <img src="linkedin.png" alt = "linkedin" height = "40" width = "40">
+	  </a>
+	</div>
+	<div class="footerimg">
+	  <a href = "http://www.facebook.com/people/Jayson-Boubin/100003338949993">
+	    <img src="facebook.png" alt = "facebook" height = "40" width = "40">
+	  </a>
+	</div>
+	<div class="footerimg">
+        <!--Source: https://www.iconfinder.com/icons/1531637/github_logo_media_social_icon -->
+	  <a href="http://github.com/boubinjg">
+            <img src="githublogo.png" alt = "github" height = "40" width = "40">
+	  </a>
+	</div>
+	<div class="footerimg">
+        <!--Source: https://www.iconfinder.com/icons/1531637/github_logo_media_social_icon -->
+	  <a href="https://stackoverflow.com/users/7999255/jayson-boubin">
+            <img src="stackOverflow.png" alt = "stack overflow" height = "40" width = "40">
+	  </a>
+	</div>
+
+	<p style="float:right;margin-right:20px;">&copy Jayson Boubin 2017</p>
+     </div>
+    </footer>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
+
+

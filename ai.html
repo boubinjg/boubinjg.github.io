@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <title>AI Game Project</title>
+    <link rel="icon" type="image/png" href="favicon-32x32.png" size="32x32">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  </head>
+
+  <body>
+    <div id="nav">
+    </div>
+      <script>
+      $.get("navbar.html", function(data){
+        $("#nav").replaceWith(data);
+      });
+      </script>
+
+    <div class="container">
+      <h1>Projects</h1>
+      <br>
+       <h3>AI Game Project</h3>
+        <h6><i>With Tyler Moore</i></h6>
+        <div class = "row">
+          <div class="col-lg-8 col-md-6 col-sm-12">
+                <p><font size="3">For the course <i>CSE 486 Artificial Intelligence</i> at Miami University, we were required to create AI bots to play a board game called <a href="https://en.wikipedia.org/wiki/Domineering">Domineering</a>. We created a bot which uses known optimal plays and more advanced AI techniques to beat human players and other bots. The cornerstone of any basic AI game bot for a board game as simple as domineering is alpha-beta pruning. Our bot uses alpha-beta pruning as a last resort. Time is a consideration, so our bot prefers validated options which take less time to calculate. To provide these validated options, we used preprocessing.</p>
+
+                <p>First, our bot uses an opening book. Domineering has a series of known best openings. Placing a tile one row above or one column next to (depending on your player color) any corner will net you the best possible move for that round. This made it easy for us to determine the moves made by our bot for the first two rounds of the game. We simply check for an unoccupied corner and take the first one we find. After this, our bot needed to use some sort of evaluation function so score moves. Alpha-beta returns the highest value move out of the move tree it creates. To score a move, you need an evaluation function. Our evaluation function scores based on two things: possible moves and guaranteed moves. By the nature of domineering, for a given board there are some squares which either player can access, and some which only one player can access. We call these possible moves and guaranteed moves respectively. Our evaluation function scores a board on these criteria, adding one point for a possible move for our player, and two points for a guaranteed move for our player. Conversely, we subtract one point for a possible move for our opponent, and two points for a guaranteed move.</font></p>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="thumbnail">
+                      <img src="posters/F2015 AI Game Project.png" alt="DSpacePoster" width="300" height="170">
+                        <div class="caption">
+                          <h3>Fall 2015 AI Game Competition Presentation</h3>
+                          <p>Talk Presented to our AI class</p>
+                            <p><a href="posters/F2015 AI Game Project.pptx" class="btn btn-outline-primary" role="button" download>Download</a></p>
+                         </div>
+                    </div>
+                  </div>
+
+           </div>
+  
+    </div>
+     
+    </div><!-- /.container -->
+    <footer class="footer">
+      <div class="footercontainer">
+	<!--Source: https://socialmediawidgets.wordpress.com/all-the-icons/ -->
+	<div class="footerimg">
+	  <a href = "https://www.linkedin.com/in/jayson-boubin-94a51a89">
+	    <img src="linkedin.png" alt = "linkedin" height = "40" width = "40">
+	  </a>
+	</div>
+	<div class="footerimg">
+	  <a href = "http://www.facebook.com/people/Jayson-Boubin/100003338949993">
+	    <img src="facebook.png" alt = "facebook" height = "40" width = "40">
+	  </a>
+	</div>
+	<div class="footerimg">
+        <!--Source: https://www.iconfinder.com/icons/1531637/github_logo_media_social_icon -->
+	  <a href="http://github.com/boubinjg">
+            <img src="githublogo.png" alt = "github" height = "40" width = "40">
+	  </a>
+	</div>
+	<div class="footerimg">
+        <!--Source: https://www.iconfinder.com/icons/1531637/github_logo_media_social_icon -->
+	  <a href="https://stackoverflow.com/users/7999255/jayson-boubin">
+            <img src="stackOverflow.png" alt = "stack overflow" height = "40" width = "40">
+	  </a>
+	</div>
+
+	<p style="float:right;margin-right:20px;">&copy Jayson Boubin 2017</p>
+     </div>
+    </footer>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
+
+

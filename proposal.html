@@ -11,44 +11,18 @@
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
   </head>
 
   <body>
-   <div class="navbar">
-     <nav class="navbar navbar-toggleable-sm navbar-inverse bg-inverse fixed-top">
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#">Jayson Boubin</a>
-        </div>
-          <div class="collapse navbar-collapse" id="navbarsExampleDefault">       
-          <ul class="navbar-nav mr-auto">
-            <li class="dropdown">
-              <a class="nav-link" href="index.html">About</span></a>
-            </li>
-            <li class="dropdown">
-              <a class="nav-link" data-toggle="dropdown" href="#">Research<span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a class = "nav-link" href="faultinjection.html">UAV Fault Injection</a></li>
-                <li><a class = "nav-link" href="trust.html">Trust in Automated Systems</a></li>
-                <li><a class = "nav-link" href="cyberworkload.html">Cyber Operator Workload Modeling</a></li>
-                <li><a class = "nav-link" href="processmigration.html">Dynamic Process Migration</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a class="nav-link" data-toggle="dropdown" href="#">Projects</a>
-              <ul class="dropdown-menu">
-                <li><a class = "nav-link" href="proposal.html">Romhack Marriage Proposal</a></li>
-                <li><a class = "nav-link" href="dspace.html">DSpace Profile Module</a></li>
-                <li><a class = "nav-link" href="compiler.html">Micro-language Compiler</a></li>
-                <li><a class = "nav-link" href="ai.html">AI Game Project</a></li>
-                <li><a class = "nav-link" href="mega.html">MEGA Tournament Scheduler</a></li>
-            </li>
-          </ul>
-        </div>
-      </nav>
+    <div id="nav">
     </div>
+      <script>
+      $.get("navbar.html", function(data){
+        $("#nav").replaceWith(data);
+      });
+      </script>
 
     <div class="container">
       <h1>Projects</h1>
@@ -68,7 +42,7 @@
       <div class = "row">
         <div class = "col-lg-12 col-md-12 col-xs-12">
 	   <p>It appeared that creating this game was going to be a simple two step process. I would have to reprogram them game, then write the game to a chip and solder the chip onto the cartridge’s circuit board. <font size="3"></p>
-	  <p>First, I was going to have to reprogram the game by modifying an original ROM. There are a few ways to modify a NES ROM. You can use a disassembler and edit the 6502 assembly code directly, or you can use a hex editor and edit the ones and zeros directly. Also, some people spend their free time making modding tools for these games, and if you search hard enough you may find one. The wonderful people at Zophar’s Domain have aggregated a bunch of these tools for editing ROMs, many of which are game specific. My original plan was to use a disassembler and actually write code to modify the game. Unfortunately, I couldn’t find one that worked on Linux, or even modern Windows, and I didn’t want to install a legacy version of windows either, so I decided to use a hex editor and some other available tools.  <font size="3"></p>
+	  <p>First, I was going to have to reprogram the game by modifying an original ROM. There are a few ways to modify a NES ROM. You can use a disassembler and edit the 6502 assembly code directly, or you can use a hex editor and edit the ones and zeros directly. Also, some people spend their free time making modding tools for these games, and if you search hard enough you may find one. The wonderful people at Zophar’s Domain have aggregated a bunch of these tools for editing ROMs, many of which are game specific. My original plan was to use a disassembler and actually write code to modify the game. Unfortunately, I couldn’t find one that worked on Linux, or even modern Windows, and I didn’t want to install a legacy version of Windows either, so I decided to use a hex editor and some other available tools.  <font size="3"></p>
         </div>
       </div>
       <div class = "row">
@@ -108,7 +82,7 @@ Obviously, in the final chamber I wanted to ask her to marry me. The only ways I
 	  <p><font size = "3">
 	    After thorough testing of the ROM, I set out to find a way to put this game on a cartridge. I wanted to make this game as authentic as possible, and give here a memento of the experience, so I decided to desolder an original legend of zelda cartridge’s rom chip and resolder my own chip onto the board. 
 <br><br>
-I programmed a 32 pin 1MB EPROM with the new ROM I created, and soldered it onto the board with the help of Matt Boubin and the fine gentlemen in the Miami University Power Electronics lab. I had my friend Max Fogle create me a label for the cartridge.  
+I programmed a 32 pin 1Mb EPROM with the new ROM I created, and soldered it onto the board with the help of Matt Boubin and the fine gentlemen in the Miami University Power Electronics lab. Because NES board only uses 28 pins, we had to rewire out EPROM, but we eventually got it to work. I also had my friend Max Fogle create a custom label for the cartridge.  
 <br><br>
 For more information, check out the link here for an album with more detailed documentation <a href="http://imgur.com/a/WvS0h">here</a>. Also, if you are wondering, she did say yes!
 	  </font></p>

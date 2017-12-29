@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <title>Branch Prediction Competition</title>
+    <link rel="icon" type="image/png" href="favicon-32x32.png" size="32x32">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  </head>
+
+  <body>
+    <div id="nav">
+    </div>
+      <script>
+      $.get("navbar.html", function(data){
+        $("#nav").replaceWith(data);
+      });
+      </script>
+
+    <div class="container">
+      <h1>Projects</h1>
+      <h3>CSE 6421 Branch Predictor Competition</h3>
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-xs-12">
+            <p><font size="3"><p>OSU's advanced architecture class required us to create a branch predictor. Our professor decided to make this a competition, with the prize being extra credit points on our final. The only requirement was that our branch predictors could not use more than 32KB of memory. </p><p>After doing some research into past JILP branch prediction championships, I decided to make an L-TAGE predictor. After all was said and done, I made 5 separate predictors on my way to a properly optimized L-TAGE predictor. I started with a Prediction by Partial Matching (PPM) predictor. This predictor uses 5 tables, one bimodal counter, and 4 history tables of the same length. Each of the 4 history tables has an 8-bit tag which is used to index into it. The tag is a combinaition of the first 8 bits of the PC and the last n bits of branch prediction history, where n is different depending on the table. The PPM predictor performed reasonably well, midpredicting about 5.5 instructions per 1000.</p>From the PPM predictor, I made a tagged geometric (TAGE) predictor. The TAGE predictor has 5 tables very similar to the PPM, but each table's size and tag length are different. The TAGE predictor also has further optimizations in its update stage which improve its prediction ability. The TAGE predictor with 4 tables had a misprediction rate of about 4.1 mispredictions per 1000 instructions.</p><p>The L-TAGE predictor is a combination of a TAGE predictor and a loop predictor. A loop predictor simply checks to see if the instructions being predicted are in a loop, which the TAGE predictor is not good at predicting. I expanded my tage predictor to have 13 tables, 1 bimodal and 12 TAGE tables, and added a loop predictor. This version had around 3.9 missed predictions per 1000 instructions. I performed a number of optimizations represented in my last two predictors. These optimizations included changing the sizes of the tables, along with some smaller tweaks which can be found in my source code or my presentation provided below. My final predictor had a misprediction rate of 3.64 missed predictions per 1000 instructions. This was enough to place me among the top 3 contestants, and earned me extra credit in the course.</p></font> </div>
+        </div>
+         <div class = row> 
+	 <div class="col-md-6">
+                    <div class="thumbnail">
+                      <img src="ProjectsImages/ltageImage.png" alt="Architecture Presentation" width="300" height="170">
+                        <div class="caption">
+                          <h3>Fall 2017 Branch Predictor Competition Presentation</h3>
+                          <p>Talk Presented to my Computer Architecture class</p>
+                            <p><a href="posters/LTAGE Predictor.pptx" class="btn btn-outline-primary" role="button" download>Download</a></p>
+                         </div>
+                    </div>
+                  </div>
+
+        
+        
+          <div class = "col-md-6">
+            <p><font size="3">My branch predictor borrowed heavily from the following papers:<br>
+	       <a href=https://www.jilp.org/vol7/v7paper10.pdf>A PPM-like, tag-based branch predictor (JILP)</a><br>
+	       <a href=https://www.jilp.org/vol9/v9paper6.pdf>The L-Tage Branch Predictor (JILP)</a><br>
+	       <a href=https://www.irisa.fr/caps/people/seznec/L-TAGE.pdf>A 256 Kbits L-TAGE branch predictor (IRISA)</a><br>
+		If you want to see my code, check it out <a href="https://github.com/boubinjg/BranchPrediction">here</a>.</font></p>
+          </div>
+        </div>
+
+    </div>
+     
+    </div><!-- /.container -->
+    <footer class="footer">
+      <div class="footercontainer">
+	<!--Source: https://socialmediawidgets.wordpress.com/all-the-icons/ -->
+	<div class="footerimg">
+	  <a href = "https://www.linkedin.com/in/jayson-boubin-94a51a89">
+	    <img src="linkedin.png" alt = "linkedin" height = "40" width = "40">
+	  </a>
+	</div>
+	<div class="footerimg">
+	  <a href = "http://www.facebook.com/people/Jayson-Boubin/100003338949993">
+	    <img src="facebook.png" alt = "facebook" height = "40" width = "40">
+	  </a>
+	</div>
+	<div class="footerimg">
+        <!--Source: https://www.iconfinder.com/icons/1531637/github_logo_media_social_icon -->
+	  <a href="http://github.com/boubinjg">
+            <img src="githublogo.png" alt = "github" height = "40" width = "40">
+	  </a>
+	</div>
+	<div class="footerimg">
+        <!--Source: https://www.iconfinder.com/icons/1531637/github_logo_media_social_icon -->
+	  <a href="https://stackoverflow.com/users/7999255/jayson-boubin">
+            <img src="stackOverflow.png" alt = "stack overflow" height = "40" width = "40">
+	  </a>
+	</div>
+
+	<p style="float:right;margin-right:20px;">&copy Jayson Boubin 2017</p>
+     </div>
+    </footer>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
+
+

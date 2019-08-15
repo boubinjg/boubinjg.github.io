@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <title>Trust in Automated Systems</title>
+    <link rel="icon" type="image/png" href="favicon-32x32.png" size="32x32">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  </head>
+
+  <body>
+    <div id="nav">
+    </div>
+      <script>
+      $.get("navbar.html", function(data){
+        $("#nav").replaceWith(data);
+      });
+      </script>
+
+    <div class="container">
+      <h1>CSE 2431, Systems 2: Introduction to Operating Systems </h1>
+        <div class="content">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-xs-12">
+                <p>Below are some of my course materials for CSE 2431, Introduction to Operating Systems
+                at OSU. This page includes a syllabus from my last section of the course (Currently spring 2019), 
+                as well as all lecture slides.</p>
+            </div>
+          </div>
+          <h5>Syllabus</h5>
+          <div class="row">
+            <div class="col-md-12">
+                <table border="1px" ;="" boarder-spacing="30px" cellpadding="30px" cellspacing="100px"> 
+        <tbody><tr> 
+         <td><b>Time/Place:</b></td> 
+         <td>TR, 12:45pm - 2:05pm, DL 264</td> 
+        </tr> 
+
+        <tr> 
+         <td><b>Instructor:</b></td> 
+         <td>Jayson Boubin, Office: DL778, Email: boubin.2@osu</td> 
+        </tr> 
+
+        <tr> 
+         <td><b>Grader/TA:</b></td> 
+        <td>Pollyanna Cao (cao.793@buckeyemail)</td>
+        </tr> 
+
+        <tr> 
+         <td><b>Office Hours:</b></td> 
+         <td>Tuesday and Thursday, 2:30pm-4:00pm, DL778 (please knock on door)</td> 
+        </tr> 
+
+         
+        <tr> 
+         <td valign="top"><b>Course<br>Description:</b></td> 
+         <td>Introduction to operating system concepts: process, CPU scheduling, memory management, file system and storage, and multi-threaded programming.</td> 
+        </tr> 
+
+         
+        <tr> 
+         <td valign="top"><b>Course<br>Objectives:<b></b></b></td> 
+         <td>Upon satisfactory completion of the course, the student will be: 
+        <ul> 
+        <li>competent with process concepts and CPU scheduling</li> 
+        <li>competent with memory hierarchy and memory management</li> 
+        <li>familiar with process control blocks, system calls, context switching, interrupts, and exception control flows</li> 
+        <li>familiar with process synchronization, inter-process communication, and threads</li>
+        <li>familiar with multi-threaded programming</li>
+        <li>familiar with file systems and disk scheduling algorithms and I/O</li>
+        <li>Be exposed to security</li>
+        </ul> 
+        </td> 
+        </tr> 
+
+         
+        <!--
+        <tr> 
+         <td valign="top"><b>Suggested Non-Core Prerequisites:</b></td> 
+         <td>Intro to AI, Linear Algebra</td> 
+        </tr> 
+         
+        <tr><td>&nbsp;</td></tr> 
+         -->
+
+        <tr> 
+         <td valign="top"><b>Suggested Texts:</b></td> 
+         <td>1) Silberschatz, Glavin, Gagne, <i>Operating Systems Concepts (9th or 10th Edition)</i><br> 
+        2) (Optional) Bryant, O'Hallaron, <i>Computer Systems: A Programmer's Perspective</i><br>
+        </td></tr> 
+
+        <tr> 
+         <td valign="top"><b>Grading Plan:</b></td> 
+        <td>
+        Lab Assignments: 20%<br>
+        Homework Assignments: 10%<br> 
+        Midterm 1: 15%<br> 
+        Midterm 2: 25%<br>
+        Participation: 30% 
+        </td> 
+        </tr> 
+         
+
+         
+        <tr> 
+         <td valign="top"><b>Policy:</b></td> 
+         <td>Labs and homework assignments will be assigned in class. Homeworks are due at the
+         start of class on their respective due dates, submitted through Canvas. Labs are due at 
+         midnight on their respective due dates, submitted through the courses submit directory.</td> 
+        </tr> 
+        </tbody></table>
+            </div>
+          </div>
+       </div>
+        <br>
+    	<h5>Lecture Slides</h5>
+            <a href=Teaching/CSE_2431_Slides.zip><u>[Download]</u></a>
+          
+    </div>
+     
+    </div><!-- /.container -->
+    <footer class="footer">
+      <div class="footercontainer">
+	<!--Source: https://socialmediawidgets.wordpress.com/all-the-icons/ -->
+	<div class="footerimg">
+	  <a href = "https://www.linkedin.com/in/jayson-boubin-94a51a89">
+	    <img src="linkedin.png" alt = "linkedin" height = "40" width = "40">
+	  </a>
+	</div>
+	<div class="footerimg">
+	  <a href = "http://www.facebook.com/people/Jayson-Boubin/100003338949993">
+	    <img src="facebook.png" alt = "facebook" height = "40" width = "40">
+	  </a>
+	</div>
+	<div class="footerimg">
+        <!--Source: https://www.iconfinder.com/icons/1531637/github_logo_media_social_icon -->
+	  <a href="http://github.com/boubinjg">
+            <img src="githublogo.png" alt = "github" height = "40" width = "40">
+	  </a>
+	</div>
+	<div class="footerimg">
+        <!--Source: https://www.iconfinder.com/icons/1531637/github_logo_media_social_icon -->
+	  <a href="https://stackoverflow.com/users/7999255/jayson-boubin">
+            <img src="stackOverflow.png" alt = "stack overflow" height = "40" width = "40">
+	  </a>
+	</div>
+
+	<p style="float:right;margin-right:20px;">&copy Jayson Boubin 2017</p>
+     </div>
+    </footer>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
+
+

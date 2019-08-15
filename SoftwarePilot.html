@@ -27,86 +27,84 @@
       <h1>Research</h1>
         <br>
         <div class="content">
-          <h3>Trust Calibration in Human-Automation Teams</h3>
-          <h6><i>With Maj. Jason Bindewald, Lorraine Borghetti, Lt. Anthony Hillesheim, Dr. Michael Miller, and Maj. Christina Rusnock</i></h6>
+          <h3>SoftwarePilot</h3>
+          <h6><i>With Dr. Chris Stewart, John Chumley, Naveen T.R. Babu, Shiqi Zhang, Zichen Zhang,<br> and many more</i></h6>
           <div class="row">
-            <div class="col-lg-8 col-md-6 col-xs-12">
-                <p><font size="3">At AFIT, I conducted experimental research on trust calibration in human-automation teams. Trust is the cornerstone of all human relationships. Relationships with advanced automated agents are similar. To ensure optimal performance, human users must appropriately trust automation. An operator who is too trusting of automation may allow automation errors to go uncorrected, while an operator who trusts the agent too little will not receive maximum benefit from the aid of an automated agent. We sought to understand the mechanisms necessary to classify humans as calibrated or uncalibrated.</font></p>
-              </div>
-              <div class="col-lg-4 col-md-6 col-xs-12">
+            <div class="col-lg-12 col-md-12 col-xs-12">
+                <p><font size="3"> 
+                    My primary work as a PhD student at OSU focuses on Fully Autonomous Aerial Systems (FAAS). 
+                    Our work on FAAS encompases diverse domains: surveying crop fields 
+                    for diseases and pests, searching disaster areas, and autonomous photography. 
+                    This work has generated a series of publictions and presentations, and was the focus
+                    of my NSF GRFP research statement. 
+                </font></a>
+            </div>
+              <div class="col-lg-12 col-md-12 col-xs-12">
                   <div class="image">
-                    <img class = "img-responsive" src="researchImages/SpaceNav.png" alt="space navigator" style="width:100%">
+                    <img class = "img-responsive" src="researchImages/SP.png" alt="space navigator" style="width:100%">
                   </div>
               </div>
           </div>
           <div class="row">
             <div class="col-md-12">
-              <p><font size="3">Calibration is the relationship between the human perception of an automated agent's ability and its actual ability. Calibrated users will be able to, through experience or instinct, identify and work with automated agents in a capacity relative to their ability. Our goal of this project is to create a model to classify calibrated users and uncalibrated users with a particular system. By classifying calibrated and undercalibrated users in larger systems, it may be possible to augment automation strategies to fit users calibration profiles. To perform calibration experiments, we used an environment called Space Navigator</font></p>
-                
-                <p><font size="3">Space Navigator is an air-traffic control style game specifically designed to evaluate the effectiveness of human-automation teams. It includes multiple types of automated agents, the ability to capture and time events, and the ability to impose easily distinguishable taskload levels, allowing researchers to easily study human-automation team dynamics and evaluate theoretical models in an experimental environment. Space Navigator has been developed at AFIT for years by a number of researchers. It was developed in Unity using C#. While at AFIT, I modified Space Navigator for use in a participant study in combination with The Ohio State University, used for multiple independent research projects, including our calibration study. My modifications to the game included data management and reporting fixes, interface changes, and the addition of psychological measures, such as an Implicit Association Test and subjective trust questionnaires. The data gathered from this study was used in the masters thesis of Lt. Anthony Hillesheim at AFIT and the PhD Dissertation of Lorraine Borghetti at OSU as well as other scholarly work</font></p>
-                
-                <p><font size="3">Using data from the participant study, we created a model for classifying participants by calibration which incorporates compliance and performance data from a few hours of gameplay. We used the results of our model and more data points to train a random-forest machine learning algorithm to classify participants as calibrated, undercalibrated, or overcalibrated using only 4 minutes worth of gameplay. Preliminary results show that the random forest algorithm has a 98% success rate in classifying participants with 4 minutes of data as compared to the classification model using multiple hours of gameplay data.</font></p>
-           </div>
-         </div>
+                <p><font size="3"> 
+                    SoftwarePilot is fully open source, and can be found on github <a href="http://github.com/boubinjg/SoftwarePilot"><u>here</u></a>.
+                    SoftwarePilot has been used in a series of papers published by members of ReroutLab. We have had a poster and extended abstract
+                    at IoTDI 2018, a paper at ICAC 2019, and a paper at SEC 2019, all of which are available for download below. 
+                    Throughout this research we have collected a series of UAV collected image datasets. Datasets include UAV captures of human faces,
+                    and UAV scans of Ohio corn fields. These datasets are available for download on the SoftwarePIlot website. 
+                </font></p>
+            </div>
+          </div>
        </div>
-    <h3>Quantifying and Influencing Trust in Human-Automation Teams</h3>
-          <h6><i>With Maj. Jason Bindewald, Dr. Brett Borghetti, Lt. Tyler Goodman, Dr. Michael Miller, Maj. Christina Rusnock, and Bryan Zake</i></h6>
-            <div class="row">
-              <div class="col-lg-8 col-md-6">
-                <p>At AFIT in 2015, I began researching human-automation teaming. Human-automation teaming is becoming a common strategy for handling complex tasks. Automation is used heavily in transportation, manufacturing, energy production, and military applications. While the use of these automated systems generally results in greater performance than humans performing alone, humans are reluctant to adopt these superior systems due to lack of trust. Anecdotally, I myself find it difficult to trust systems which I do not fully understand, even if I witness their superior performance. At AFIT, we investigated the components of trust when dealing with automated systems in order isolate the components of trust, study the effects of trust, and to influence the rate of adoption of new technologies.</p>
-
-            </div>
-              <div class="col-lg-4 col-md-6 col-xs-12">
-                <div class="image">
-                  <img class = "img-responsive" src="researchImages/CausalLoop.png" alt="causalLoop" style="width:100%">
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-12">
-                <p>We studied the compliance and reliance, two behavioral measures of human trust, using data obtained by a participant study run by Maj. Jason Bindewald, PhD, using Space Navigator. Using this data, we developed a framework for quantifying compliance and reliance over user taskload. Using this model, we created a validated discrete event simulation in <a href=https://en.wikipedia.org/wiki/IMPRINT_(Improved_Performance_Research_Integration_Tool)>IMPRINT</a>, demonstrating that our model correctly replicates the effects of human trust of automated systems.</p>
-
-                <p>We continued to analyze the data, looking for a general model for reliance and compliance in relation to automated systems. The system level model we created relates trust behaviors to objective variables, like automation reliability, performance, and user taskload, and also to subjective variables, such as user trust, acceptance, stress, and automation predictability</p>
-		<p>This research culminated in a series of presentations and a paper which won the best student paper award of the human performance modeling track at HFES 2017. That paper and other presentations are cited below.</p>
-             </div>
-	   </div>
+    	
            <h4>Posters and Presentations</h4>
                 
                 <div class="row">
                   <div class="col-lg-4 col-md-6">
                     <div class="thumbnail">
-                      <img src="posters/elicitingalgorithm.png" alt="eliciting algorithm" width="300" height="200">
+                      <img src="researchImages/ICAC_Poster.png" alt="ICAC Poster" width="300" height="200">
                         <div class="caption">
-                          <h3>Eliciting an Algorithm to Replicate Human Trust in Automation</h3>
-                          <p>Poster Presented at the Dayton Engineering and Science Symposium, 2015</p>
-                            <p><a href="posters/elicitingalgorithm.png" class="btn btn-outline-primary" role="button" download>Download</a></p>
+                          <h3>Autonomic Computing Challenges in Fully Autonomous Precision Agriculture</h3>
+                          <p>Poster presented at ICAC 2019</p>
+                            <p><a href="posters/ICAC2019.pdf" class="btn btn-outline-primary" role="button" download>Download</a></p>
                         </div>
                       </div>
                     </div>
 
                     <div class="col-lg-4 col-md-6">
                       <div class="thumbnail">
-                        <img src="posters/iiePres.png" alt="IIE prsentation 2016" width="300" height="200">
+                        <img src="researchImages/ICAC_Pres.png" alt="ICAC Presentation 2019" width="300" height="200">
                           <div class="caption">
-                          <h3>Quantifying and Evaluating Trust in Automated Systems</h3>
-                          <p>Talk Presented by Maj. Christina Rusnock,PhD, Institute of Industrial Engineers Anual Conference, 2016</p>
-                            <p><a href="posters/IIE Presentation - Trust - Boubin-Rusnock 2016.05.22.odp" class="btn btn-outline-primary" role="button" download>Download</a></p>
+                          <h3>Autonomic Computing Challenges in Fully Autonomous Precision Agriculture</h3>
+                          <p>Talk Presented at ICAC 2019</p>
+                            <p><a href="posters/ICAC2019.pptx" class="btn btn-outline-primary" role="button" download>Download</a></p>
                         </div>
                       </div>
                     </div>
                 <div class="col-lg-4 col-md-12">
                 <h5>Citations</h5>
-                <ul><font size="2">
-                  <li>Jayson G. Boubin, Christina F. Rusnock, Jason M. Bindewald: Quantifying Compliance and Reliance Trust Behaviors to Influence Trust in Human-Automation Teams. HFES 2017</li>
-                  <li>Jayson G. Boubin, Christina F. Rusock: Measuring Human Compliance and Reliance in Automated Systems. IIE 2016. (Abstract)</li>
-                  <li>Boubin, J,G Rusnock, C,F(2015,July) Eliciting an Algorithm to Replicate Human Trust In Automation In The Domain of Compliance, Poster presented at the AFIT Summer Intern Poster Session, Air Force Institute of
-Technology, Wright Patterson Air Force Base, Ohio.</li>
-                  <li>Boubin, J,G Rusnock, C,F, Miller, M(2015 November) Simulating Compliance and Reliance, Talk presented at the Cincinnati-Dayton INFORMS Technical Symposium, Wright State University, Ohio</li>
-                  <li>Boubin, J,G Rusnock, C,F, Miller, M(2015 November) Eliciting an Algorithm to Replicate Human Trust In Automation In The Domain of Reliance, Poster presented at the Dayton Engineering Sciences Symposium,
-Wright State University, Ohio</li>
-                  <li>Boubin, J,G Rusnock, C,F(2016 May) Quantifying and Evaluating Trust in Automated Systems, Talk presented at the ISERC 2016 conference, Anaheim, California. (Presented by Maj. Christina Rusnock, Ph.D.) </li>
-		  <li>Boubin, Jayson G., Christina F. Rusnock, and Jason M. Bindewald. "Quantifying Compliance and Reliance Trust Behaviors to Influence Trust in Human-Automation Teams." Proceedings of the Human Factors and Ergonomics Society Annual Meeting. Vol. 61. No. 1. Sage CA: Los Angeles, CA: SAGE Publications, 2017.</i>
-                  </font>
+                <ul><font size="3">
+                        <li><b>Jayson Boubin</b>, Naveen T.R. Babu, Christopher Stewart, 
+                            John Chumley, Shiqi Zhang <br>
+                            Managing Edge Resources for Fully Autonomous Aerial Systems<br>
+                            SEC 2019<br>
+                            <a href=#><u>[Download (Coming Soon)]</u></a>
+                        </li>
+                        <li><b>Jayson Boubin</b>, John Chumley, Christopher Stewart, 
+                            Sami Khanal <br>
+                            Autonomic Computing Challenges in Fully Autonomous 
+                            Precision Agriculture<br>
+                            ICAC 2019<br>
+                            <a href=Papers/Boubin_ICAC_2019.pdf><u>[Download]</u></a>
+                        </li>
+                        <li><b>Jayson Boubin</b>, Shiqi Zhang, Venkata Mandadapu, 
+                            Christopher Stewart<br>
+                            Poster Abstract: Characterizing Computational Workloads in UAV Applications<br>
+                            IoTDI 2019<br>
+                            <a href=Papers/Boubin_IoTDI_2018.pdf><u>[Download]</u></a>
+                        </li>
+                </font>
                 </ul>
               </div>
             </div>
